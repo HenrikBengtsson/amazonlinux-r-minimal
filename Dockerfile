@@ -9,7 +9,7 @@ MAINTAINER Henrik Bengtsson "henrikb@braju.com"
 ENV R_VERSION=3.3.2
 ENV R_READLINE=yes
 
-RUN yum install -y diffutils         ## make: 'cmd'; required for modules/lapack
+RUN yum install -y diffutils         ## make: 'cmp'; required for modules/lapack
 RUN yum install -y findutils         ## make: 'find'; required for library/translations
 RUN yum install -y which             ## R needs it at runtime, e.g. Sys.which()
 RUN yum install -y gcc-c++
